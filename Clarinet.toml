@@ -1,0 +1,44 @@
+[project]
+name = 'DFlash'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.AMM]
+path = 'contracts/AMM.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.ArbitrageHelper]
+path = 'contracts/ArbitrageHelper.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.DFlash]
+path = 'contracts/DFlash.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.Pool]
+path = 'contracts/Pool.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.YieldOptimizer]
+path = 'contracts/YieldOptimizer.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.traits]
+path = 'contracts/traits/traits.clar'
+clarity_version = 3
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
